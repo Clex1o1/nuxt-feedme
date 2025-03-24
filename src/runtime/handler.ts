@@ -78,7 +78,7 @@ const feedmeHandleContent = async (
 
   const feed = createFeedFrom(feedmeContentOptions);
 
-  const records = await queryCollectionWithEvent(
+  const records = await queryCollection(
     event,
     feedmeContentOptions.item?.query
   );
